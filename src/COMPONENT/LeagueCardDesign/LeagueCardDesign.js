@@ -33,9 +33,7 @@ export default function MediaCard(props) {
     if (strLeagueAlternate === '') {
         strLeagueAlternate = strLeague;
     }
-    //console.log(props.data);
-
-    //  author.toUpperCase()
+    
     return (
         <>
 

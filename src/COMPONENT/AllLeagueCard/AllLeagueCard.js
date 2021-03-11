@@ -22,16 +22,14 @@ const AllLeagueCard = () => {
             .then(data => success(data))
 
     })
-    //const [datam, setDatam] = useState([]);
+   
     
     let [datam,setDatam]=useState([])
    
 
     
     async function success(data) {
-        // console.log(data);
-        // console.log(newData);
-        //console.log(Object.values(data));
+        
         
             newData = [...newData, Object.values(data)];
         
@@ -41,7 +39,7 @@ const AllLeagueCard = () => {
             await hello(setData);
         }
     }
-    console.log(datam.length);
+    //console.log(datam.length);
    
     function hello(setData) {
         if (datam.length === 0) {
@@ -60,13 +58,12 @@ const AllLeagueCard = () => {
 
 
 
-    // console.log(datam);
-    // console.log(datam.length)
+    
  
      
     
     
-      console.log(datam);
+      //console.log(datam);
 
     return (
 

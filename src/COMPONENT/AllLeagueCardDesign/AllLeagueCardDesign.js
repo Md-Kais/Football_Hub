@@ -20,14 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const AllLeagueCardDesign = ({ datam }) => {
-    //console.log(datam[0].length);
-    // console.log(datam[0].length);
-    // for(let i=0;i<datam[0].length;i++){
-    //     // console.log(datam[i]);
-    //     let ans=datam[0];
-    //    console.log(ans[0][0]);
-    // }
-   // console.log(datam);
+  
     const classes = useStyles();
     let count = 0;
 

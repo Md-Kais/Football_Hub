@@ -46,7 +46,7 @@ export default function ImgMediaCard() {
     LeagueId && makeArray();
     
    
-    // 'https://wallpapercave.com/wp/vvZQmlz.jpg'
+    
         
 
 
@@ -65,10 +65,7 @@ export default function ImgMediaCard() {
 
                 </LeagueCardContext.Provider>
             </Box>
-            {/* <Box component="span" p={3}>
-               
-               
-            </Box> */}
+            
             <Box component="span" p={3} textAlign="center">
                 <small> All Rights Reserved</small>
 
