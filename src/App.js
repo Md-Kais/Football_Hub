@@ -15,26 +15,31 @@ function App() {
   }, []);
   return (
     <div>
-      <Router>
-        <Switch>
-          <LeagueIDContext.Provider value={LeagueIdData}>
+      <LeagueIDContext.Provider value={LeagueIdData}>
+        <Router>
+          <Switch>
+
             <Route path="/home">
-              
+
               <Home />
+            </Route>
+            <Route path="/leagueDetailed/:idLeague">
+              <LeagueDetailed />
             </Route>
             <Route exact path="/">
               <Home />
             </Route>
+            <Route exact path="*">
+              <h1>No</h1>
+            </Route>
 
-          </LeagueIDContext.Provider>
-          
-          <Route path="/leagueDetailed/:id">
-            <LeagueDetailed />
-          </Route>
 
-       
-        </Switch>
-      </Router>
+
+
+
+          </Switch>
+        </Router>
+      </LeagueIDContext.Provider>
     </div>
   );
 }

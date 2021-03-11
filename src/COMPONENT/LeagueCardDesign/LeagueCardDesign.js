@@ -9,15 +9,17 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './LeagueCardDesign.css'
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
-
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
         maxWidth: 'auto',
         backgroundColor: '#fe9355',
     },
     media: {
+        width: '95%',
         height: 'auto',
-        backgroundColor:'#fe9355',
+        backgroundColor: '#fe9355',
+        backgroundSize: 'cover',
     },
     border: {
         border: 'none',
@@ -26,57 +28,60 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props) {
     const classes = useStyles();
-    let { strCountry, strLeagueAlternate, strLeague, strLogo } = props.data;
+    let { idLeague , strCountry, strLeagueAlternate, strLeague, strLogo } = props.data;
     console.log(props.data);
-    if(strLeagueAlternate===''){
-        strLeagueAlternate=strLeague;
+    if (strLeagueAlternate === '') {
+        strLeagueAlternate = strLeague;
     }
     //console.log(props.data);
 
     //  author.toUpperCase()
     return (
         <>
-           
-            <CardActionArea className='card-Bg-Change' style={{ 
-        borderRadius:'20px'}}>
-                <CardMedia style={{ textAlign: 'center'}}
-                        className={classes.media}
-                          
-                        component="img"
-                        alt={strLeague}
 
-                        image={strLogo}
+            <CardActionArea className='card-Bg-Change' style={{
+                borderRadius: '20px'
+            }}>
+                <CardMedia style={{ textAlign: 'center' , borderRadius:'20px'}}
+                    className={classes.media}
+
+                    component="img"
+                    alt={strLeague}
+
+                    image={strLogo}
                 />
-                    <CardContent>
+                <CardContent>
 
-                    <Typography gutterBottom variant="h5" component="h2" style={{ color: '#15101A', fontFamily: 'bold',fontSize: '24px',fontWeight:'600' }}>
-                            {strLeague}
-                        </Typography>
+                    <Typography gutterBottom variant="h5" component="h2" style={{ color: '#15101A', fontFamily: 'bold', fontSize: '24px', fontWeight: '600' }}>
+                        {strLeague}
+                    </Typography>
 
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            {strLeagueAlternate}<br/>
-                            
-                        </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        {strLeagueAlternate}<br />
+
+                    </Typography>
                     <Typography variant="h5" style={{ color: '#15101A', fontFamily: 'normal', fontSize: '16px', fontWeight: '300' }}>
                         Country: {strCountry}<br />
 
                     </Typography>
-                      
-
-                    </CardContent>
-                <Button size="small" variant="contained" color="secondary" style={{margin:'5px'}}>
-                    Explore →
-                </Button>
-
-                </CardActionArea>
-                
-
-                   
 
 
-                
+                </CardContent>
 
-            
+                <Link to={`/leagueDetailed/${idLeague}`} className="linkDesign">
+                    <Button size="small" variant="contained" color="secondary" style={{ margin: '5px' }}>Explore →</Button>
+                </Link>
+
+
+            </CardActionArea>
+
+
+
+
+
+
+
+
         </>
     );
 }

@@ -4,8 +4,27 @@
    margin-left:10px;
    margin-right:15px;
 }
-img{
+.bgImageDetailed{
+    display: block;
+    background-image: url("https://wallpapercave.com/wp/vvZQmlz.jpg");
+    /* background-attachment: fix; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.4; */
+    width: 100%;
+    /* height: 100%; */
     height:300px;
     margin: 0 auto;
     border-radius: 20px;
+}
+.bgImageLogo{
+   
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    opacity: 1 !important;;
+    width: 60%;
+    height: 75%;
 }

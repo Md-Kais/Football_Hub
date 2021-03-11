@@ -6,6 +6,7 @@ import AllLeagueCard from './../AllLeagueCard/AllLeagueCard'
 import { LeagueIDContext } from './../../App.js'
 
 import Box from '@material-ui/core/Box';
+import logoImage from './../../Images/logoHub.png'
 export const LeagueCardContext = createContext();
 
 
@@ -51,8 +52,14 @@ export default function ImgMediaCard() {
 
     return (
         <React.Fragment>
+            <div className='bgImageDetailed'>
+                <Box component="span">
+                    <img src={logoImage} alt="football Hub" className="bgImageLogo"></img>
+
+                </Box>
+            </div>
             <Box component="span">
-                <img src='https://wallpapercave.com/wp/vvZQmlz.jpg' alt="camp Kais Stadium" width='100%'></img>
+               
                 <LeagueCardContext.Provider value={IdArray}>
                     <AllLeagueCard />
 
@@ -69,7 +76,7 @@ export default function ImgMediaCard() {
             </Box>
 
             
-        </React.Fragment>
+        </React.Fragment> 
 
     );
 }

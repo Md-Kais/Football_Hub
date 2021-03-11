@@ -1,0 +1,36 @@
+.bgImageDetailed{
+    display: block;
+    background-image: url("https://wallpapercave.com/wp/vvZQmlz.jpg");
+    /* background-attachment: fix; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.4; */
+    width: 100%;
+    /* height: 100%; */
+    height:300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.bgImageLogo{
+   
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    opacity: 1 !important;;
+    width: 60%;
+    height: 75%;
+}
+.leagueImage{
+    display: block;
+    margin: 0 auto;
+}
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: keep-all
+}
