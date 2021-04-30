@@ -1,4 +1,11 @@
-Code Link : https://github.com/Porgramming-Hero-web-course/react-router-Md-Kais
+• A website for knowing 20 different football league names across the world.
+
+• Click Explore to explore about specific league information.
+
+• Go to their Facebook, website, Twitter, YouTube channel through the provided button at the
+bottom of the page.
+
+• Front-end Technology : Material Ui, React.js , HTML5 , CSS3.
 
 
 live link : https://objective-babbage-e50248.netlify.app/
